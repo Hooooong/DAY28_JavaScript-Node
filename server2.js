@@ -9,6 +9,22 @@ var http = require("http");
 // 인자 수가 정해져있음
 var server  = http.createServer(function(req, response){
 
+  /*
+  Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: '?id=root&pw=qwer1234',
+    query: 'id=root&pw=qwer1234',
+    pathname: '/screenshot/path',
+    path: '/screenshot/path?id=root&pw=qwer1234',
+    href: '/screenshot/path?id=root&pw=qwer1234' }
+  */
+
   // 사용자 요청에 대해 어떻게 응답할지를 정의
   response.write("url : " + req.url);
 
